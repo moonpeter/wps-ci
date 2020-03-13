@@ -1,11 +1,9 @@
 from django.shortcuts import render
 
-from .models import Post
+from blog.models import Post
 
 
 def post_list(request):
-    # config.urls
-    # /posts/
     posts = Post.objects.all()
     context = {
         'posts': posts,
