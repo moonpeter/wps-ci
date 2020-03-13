@@ -4,6 +4,8 @@ from .models import Post
 
 
 def post_list(request):
+    # config.urls
+    # /posts/
     posts = Post.objects.all()
     context = {
         'posts': posts,
