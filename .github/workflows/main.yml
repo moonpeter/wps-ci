@@ -27,5 +27,5 @@ jobs:
     
     - name: Poetry export requirments
       run: |
-        ~/.poetry/bin/poetry export -f requirements.txt > requirments.txt
+        ~/.poetry/bin/poetry export -f requirements.txt > requirements.txt
         cat requirements.txt
